@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЦУМ — Калькулятор</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">ЦУМ</div>
+
+    <nav class="navigation">
+        <a href="#calculator">КАЛЬКУЛЯТОР</a>
+        <a href="#about">О ПРОЕКТЕ</a>
+        <a href="#author">АВТОР</a>
+    </nav>
+
+    <button id="themeButton" class="theme-button">☾</button>
+</header>
+
+
+<main>
+
+    <section class="hero">
+        <p class="subtitle">ЛАБОРАТОРНАЯ РАБОТА №1</p>
+
+        <h1>
+            ЦУМ
+            <span>CALCULATOR</span>
+        </h1>
+
+        <p class="description">
+            Калькулятор в стилистике современного сайта ЦУМ.
+            Минималистичный интерфейс, контрастная типографика
+            и фирменный оранжевый акцент.
+        </p>
+    </section>
+
+
+    <section class="goal" id="about">
+
+        <div class="section-number">01</div>
+
+        <div>
+            <h2>Цель лабораторной работы</h2>
+
+            <p>
+                Знакомство с инструментами построения пользовательских
+                интерфейсов web-сайтов:
+                <mark>HTML</mark> и <mark>CSS</mark>.
+            </p>
+        </div>
+
+    </section>
+
+
+    <section class="calculator-section" id="calculator">
+
+        <div class="section-number">02</div>
+
+        <div class="calculator-wrapper">
+
+            <div class="calculator">
+
+                <div class="calculator-top">
+                    <span>TSUM</span>
+                    <span>CALCULATOR</span>
+                </div>
+                <button id="resultColorButton" class="result-color-button">
+    COLOR
+</button>
+
+                <div id="result" class="result">0</div>
+
+                <div class="buttons">
+
+                    <div class="button-row">
+                        <button id="btn_op_clear" class="my-btn secondary">C</button>
+                        <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+                        <button id="btn_op_percent" class="my-btn secondary">%</button>
+                        <button id="btn_op_backspace" class="my-btn secondary">⌫</button>
+                        <button id="btn_op_sqrt" class="my-btn secondary">√</button>
+                        <button id="btn_op_square" class="my-btn secondary">x²</button>
+                        <button id="btn_op_factorial" class="my-btn secondary">!</button>
+                        <button id="btn_op_div" class="my-btn primary">/</button>
+                    </div>
+
+                    <div class="button-row">
+                        <button id="btn_digit_7" class="my-btn">7</button>
+                        <button id="btn_digit_8" class="my-btn">8</button>
+                        <button id="btn_digit_9" class="my-btn">9</button>
+                        <button id="btn_op_mult" class="my-btn primary">×</button>
+                    </div>
+
+                    <div class="button-row">
+                        <button id="btn_digit_4" class="my-btn">4</button>
+                        <button id="btn_digit_5" class="my-btn">5</button>
+                        <button id="btn_digit_6" class="my-btn">6</button>
+                        <button id="btn_op_minus" class="my-btn primary">−</button>
+                    </div>
+
+                    <div class="button-row">
+                        <button id="btn_digit_1" class="my-btn">1</button>
+                        <button id="btn_digit_2" class="my-btn">2</button>
+                        <button id="btn_digit_3" class="my-btn">3</button>
+                        <button id="btn_op_plus" class="my-btn primary">+</button>
+                    </div>
+
+                    <div class="button-row">
+                        <button id="btn_digit_0" class="my-btn zero">0</button>
+                        <button id="btn_digit_000" class="my-btn">000</button>
+                        <button id="btn_digit_dot" class="my-btn">.</button>
+                        <button id="btn_op_equal" class="my-btn primary execute">=</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="extra-section">
+
+        <div class="section-number">03</div>
+
+        <div class="extra-content">
+
+            <h2>Раздел проекта</h2>
+
+            <select id="categorySelect">
+                <option value="">Выберите раздел</option>
+                <option value="fashion">Fashion</option>
+                <option value="beauty">Beauty</option>
+                <option value="accessories">Аксессуары</option>
+                <option value="home">Дом</option>
+            </select>
+
+            <p id="categoryText">
+                Выберите категорию из списка.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="author-section" id="author">
+
+        <div class="section-number">04</div>
+
+        <details>
+            <summary>Автор проекта</summary>
+
+            <div class="author-info">
+
+                <p>
+                    <strong>ФИО:</strong>
+                    Волкова Варвара Денисовна
+                </p>
+
+                <p>
+                    <strong>Группа:</strong>
+                    ИБМ3-54Б
+                </p>
+
+                <p>
+                    <strong>Тема:</strong>
+                    Сайт ЦУМ
+                </p>
+
+            </div>
+        </details>
+
+    </section>
+
+
+    <section class="github-section">
+
+        <a href="https://github.com/" target="_blank" class="github-button">
+            GITHUB →
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">ЦУМ</div>
+
+    <p>
+        ЛР выполнена: Волкова Варвара Денисовна
+    </p>
+
+    <p>
+        ИБМ3-54Б · 2026
+    </p>
+
+</footer>
+
+
+<script>
+
+const result = document.getElementById("result");
+const buttons = document.querySelectorAll(".my-btn");
+const themeButton = document.getElementById("themeButton");
+
+let currentInput = "";
+let firstNumber = null;
+let operator = null;
+
+
+/* КНОПКИ КАЛЬКУЛЯТОРА */
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const id = button.id;
+
+
+        /* ЦИФРЫ */
+
+        if (id.includes("digit")) {
+
+            const value = button.textContent.trim();
+
+            // Если на дисплее ошибка, начинаем новый ввод
+            if (currentInput === "ERROR") {
+                currentInput = "";
+            }
+
+            if (value === "." && currentInput.includes(".")) {
+                return;
+            }
+
+            // Не разрешаем вводить больше 12 символов
+            if (currentInput.length + value.length > 12) {
+                currentInput = "ERROR";
+                result.textContent = "ERROR";
+                return;
+            }
+
+            currentInput += value;
+
+            result.textContent = currentInput;
+        }
+
+
+        /* ОЧИСТКА */
+
+        if (id === "btn_op_clear") {
+
+            currentInput = "";
+            firstNumber = null;
+            operator = null;
+
+            result.textContent = "0";
+        }
+
+
+        /* СМЕНА ЗНАКА */
+
+        if (id === "btn_op_sign") {
+
+            if (currentInput !== "") {
+
+                currentInput = String(Number(currentInput) * -1);
+
+                result.textContent = currentInput;
+            }
+        }
+
+
+        /* ПРОЦЕНТ */
+
+        if (id === "btn_op_percent") {
+
+            if (currentInput !== "") {
+
+                currentInput = String(Number(currentInput) / 100);
+
+                result.textContent = currentInput;
+            }
+        }
+
+
+        /* BACKSPACE */
+
+        if (id === "btn_op_backspace") {
+
+            currentInput = currentInput.slice(0, -1);
+
+            result.textContent = currentInput || "0";
+        }
+
+
+        /* КВАДРАТНЫЙ КОРЕНЬ */
+
+        if (id === "btn_op_sqrt") {
+
+            if (currentInput !== "") {
+
+                const number = Number(currentInput);
+
+                if (number < 0) {
+                    result.textContent = "ERROR";
+                    currentInput = "";
+                    return;
+                }
+
+                currentInput = String(Math.sqrt(number));
+
+                result.textContent = currentInput;
+            }
+        }
+
+
+        /* КВАДРАТ */
+
+        if (id === "btn_op_square") {
+
+            if (currentInput !== "") {
+
+                const number = Number(currentInput);
+
+                currentInput = String(number * number);
+
+                result.textContent = currentInput;
+            }
+        }
+
+
+        /* ФАКТОРИАЛ */
+
+        if (id === "btn_op_factorial") {
+
+            if (currentInput !== "") {
+
+                const number = Number(currentInput);
+
+                if (number >= 0 && Number.isInteger(number)) {
+
+                    let factorial = 1;
+
+                    for (let i = 1; i <= number; i++) {
+                        factorial = factorial * i;
+                    }
+
+                    currentInput = String(factorial);
+
+                    result.textContent = currentInput;
+
+                } else {
+
+                    result.textContent = "ERROR";
+                }
+            }
+        }
+
+
+        /* АРИФМЕТИЧЕСКИЕ ОПЕРАЦИИ */
+
+        if (
+            id === "btn_op_plus" ||
+            id === "btn_op_minus" ||
+            id === "btn_op_mult" ||
+            id === "btn_op_div"
+        ) {
+
+            if (currentInput === "") {
+                return;
+            }
+
+
+            /* Если это первая операция */
+
+            if (firstNumber === null) {
+
+                firstNumber = Number(currentInput);
+
+            } else {
+
+                /* Если операция уже была выбрана,
+                   сначала считаем предыдущую */
+
+                const secondNumber = Number(currentInput);
+
+                if (operator === "+") {
+                    firstNumber = firstNumber + secondNumber;
+                }
+
+                if (operator === "-") {
+                    firstNumber = firstNumber - secondNumber;
+                }
+
+                if (operator === "*") {
+                    firstNumber = firstNumber * secondNumber;
+                }
+
+                if (operator === "/") {
+
+                    if (secondNumber === 0) {
+
+                        result.textContent = "ERROR";
+
+                        currentInput = "";
+                        firstNumber = null;
+                        operator = null;
+
+                        return;
+                    }
+
+                    firstNumber = firstNumber / secondNumber;
+                }
+
+                result.textContent = firstNumber;
+            }
+
+
+            /* Запоминаем новую операцию */
+
+            if (id === "btn_op_plus") {
+                operator = "+";
+            }
+
+            if (id === "btn_op_minus") {
+                operator = "-";
+            }
+
+            if (id === "btn_op_mult") {
+                operator = "*";
+            }
+
+            if (id === "btn_op_div") {
+                operator = "/";
+            }
+
+            currentInput = "";
+        }
+
+
+        /* РАВНО */
+
+        if (id === "btn_op_equal") {
+
+            if (
+                firstNumber === null ||
+                currentInput === "" ||
+                operator === null
+            ) {
+                return;
+            }
+
+
+            const secondNumber = Number(currentInput);
+
+            let answer;
+
+
+            if (operator === "+") {
+
+                answer = firstNumber + secondNumber;
+            }
+
+
+            if (operator === "-") {
+
+                answer = firstNumber - secondNumber;
+            }
+
+
+            if (operator === "*") {
+
+                answer = firstNumber * secondNumber;
+            }
+
+
+            if (operator === "/") {
+
+                if (secondNumber === 0) {
+
+                    result.textContent = "ERROR";
+
+                    currentInput = "";
+                    firstNumber = null;
+                    operator = null;
+
+                    return;
+                }
+
+                answer = firstNumber / secondNumber;
+            }
+
+
+            // Проверяем, помещается ли результат на дисплее
+            if (!Number.isFinite(answer) || String(answer).length > 12) {
+                result.textContent = "ERROR";
+                currentInput = "ERROR";
+            } else {
+                result.textContent = answer;
+                currentInput = String(answer);
+            }
+
+            firstNumber = null;
+            operator = null;
+        }
+
+    });
+
+});
+
+
+/* ТЕМНАЯ ТЕМА */
+
+themeButton.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+
+        themeButton.textContent = "☀";
+
+    } else {
+
+        themeButton.textContent = "☾";
+    }
+
+});
+
+
+/* ВЫПАДАЮЩИЙ СПИСОК */
+
+const categorySelect = document.getElementById("categorySelect");
+const categoryText = document.getElementById("categoryText");
+
+
+categorySelect.addEventListener("change", () => {
+
+    const selected = categorySelect.value;
+
+
+    if (selected === "fashion") {
+
+        categoryText.textContent =
+            "Коллекции и актуальные fashion-образы.";
+    }
+
+
+    if (selected === "beauty") {
+
+        categoryText.textContent =
+            "Косметика, парфюмерия и beauty-продукты.";
+    }
+
+
+    if (selected === "accessories") {
+
+        categoryText.textContent =
+            "Сумки, украшения, часы и другие аксессуары.";
+    }
+
+
+    if (selected === "home") {
+
+        categoryText.textContent =
+            "Предметы интерьера и товары для дома.";
+    }
+
+
+    if (selected === "") {
+
+        categoryText.textContent =
+            "Выберите категорию из списка.";
+    }
+
+});
+const resultColorButton = document.getElementById("resultColorButton");
+
+let resultColorChanged = false;
+
+resultColorButton.addEventListener("click", () => {
+
+    if (resultColorChanged === false) {
+
+        result.style.color = "#ff5a00";
+        resultColorChanged = true;
+
+    } else {
+
+        result.style.color = "";
+        resultColorChanged = false;
+    }
+
+});
+
+</script>
